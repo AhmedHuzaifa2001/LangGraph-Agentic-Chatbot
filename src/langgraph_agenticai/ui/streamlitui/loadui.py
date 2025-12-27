@@ -11,7 +11,7 @@ class LoadUI:
     def load_ui(self):
              
              st.set_page_config(
-                 page_title= "🤖 " + self.config.get_page_title(), 
+                 page_title= self.config.get_page_title(), 
                  layout="wide",
                  page_icon="🤖",
                  initial_sidebar_state="expanded"
@@ -104,6 +104,33 @@ class LoadUI:
                     help="Select the use case for your AI agent"
                 )
                 
+
+                ## Chatbot usecase selection
+                if self.user_controls["selected_usecase"] == "Chatbot With Web" or self.user_controls["selected_usecase"] == "AI News":
+                     
+                     self.user_controls["tavily_api_key"] = st.session_state["tavily_api_key"] = st.text_input("Tavily Api Key" , type = "password")
+
+                     if not self.user_controls["tavily_api_key"]:
+                          st.warning("Please enter your Tavily Api Key!!!")
+
+
+
+                ## AI News usecase selection
+                if self.user_controls["selected_usecase"] == "AI News":
+                     st.subheader("AI News Explorer")
+
+                     with st.sidebar:
+                          time_frame = st.selectbox(
+                               "select time frame",
+                               ["Daily" , "Weekly" , "Monthly"],
+                               index = 0
+                          )
+                     if st.button("Fetch Latest AI News" , use_container_width = True):
+                          st.session_state.IsFetchButtonClicked = True  ## Creates a flag (boolean) in session state
+                          st.session_state.timeframe = time_frame
+                     
+
+
                 # Footer with additional info
                 st.divider()
                 st.markdown("""
