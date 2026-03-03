@@ -1,4 +1,4 @@
-from typing_extensions import TypedDict , Annotated
+from typing_extensions import Literal, TypedDict , Annotated
 from langgraph.graph.message import add_messages
 
 
@@ -11,5 +11,9 @@ class State(TypedDict):
       messages: Annotated[list , add_messages]
       news_data: list  
       summary: str    
-      frequency: str  
+      frequency: str 
+      usecase:Literal["basic_chatbot" , "chatbot_with_tools" , "ai_news"]
+      extracted_params:str
+      
+
         

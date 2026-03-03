@@ -7,8 +7,9 @@ from src.langgraph_agenticai.nodes.chatbot_with_tools import *
 from src.langgraph_agenticai.nodes.ai_news_node import *
 
 class GraphBuilder:
-    def __init__(self , model):
+    def __init__(self , model, user_controls=None):
         self.llm = model
+        self.user_controls = user_controls or {}
         self.graph_builder = StateGraph(State)
 
 
@@ -62,7 +63,8 @@ class GraphBuilder:
 
     def ai_news_builder(self):
 
-        ai_news = AINewsNode(self.llm)
+        tavily_key = self.user_controls.get("tavily_api_key")
+        ai_news = AINewsNode(self.llm, tavily_api_key=tavily_key)
         self.graph_builder.add_node("fetch_news" , ai_news.fetch_news)
         self.graph_builder.add_node("summarize_news" , ai_news.summarize_news)
         self.graph_builder.add_node("save_results" , ai_news.save_result)
@@ -88,4 +90,3 @@ class GraphBuilder:
             self.ai_news_builder()
         
         return self.graph_builder.compile()
-        

@@ -45,7 +45,7 @@ def load_agentic_app():
 
                ##graph builder
 
-               graph_builder = GraphBuilder(model)
+               graph_builder = GraphBuilder(model, user_controls=user_input)
 
                try:
                     graph = graph_builder.setup_graph(usecase)

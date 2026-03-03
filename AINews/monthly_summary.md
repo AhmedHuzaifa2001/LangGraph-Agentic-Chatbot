@@ -1,42 +1,42 @@
 # Monthly AI News Summary
 
-### 2026-01-03
-- [Florida Gov. Ron DeSantis says state officials have the right to regulate artificial intelligence despite President Trump’s recent executive order](https://www.foxnews.com/tech/desantis-says-florida-can-regulate-ai-despite-trumps-executive-order-we-have-right-do-this)
+### 2026-02-27
+- [Basis raises $100 million Series B at $1.15 billion valuation](https://www.fintechfutures.com/ai-in-fintech/february-2026-top-five-ai-stories-of-the-month)
 
-### 2025-12-28
-- [Taiwan Semiconductor is poised for explosive long-term growth as demand for AI chips and data centers accelerates](https://www.fool.com/investing/2025/12/28/what-is-the-best-artificial-intelligence-ai-stock/)
+### 2026-02-25
+- [China AI companies are driving the future of global robotaxi deployment](https://www.forbes.com/sites/viviantoh/2026/02/24/china-startups-is-driving-the-future-of-global-robotaxi-deployment/)
 
-### 2025-12-24
-- [Top Agtech and Food Tech Startups from TechCrunch Disrupt, featuring 14 standout startups in the agtech and food tech sectors](https://www.startupecosystem.ca/news/top-agtech-and-food-tech-startups-from-techcrunch-disrupt/)
+### 2026-02-19
+- [Tata Chairman N Chandrasekaran says AI will employ more workers, not replace jobs](https://www.latestly.com/agency-news/business-news-ai-will-employ-more-workers-not-replace-jobs-workforce-moving-to-higher-value-roles-with-ai-tata-chairman-n-chandrasekaran-7320583.html/amp)
 
-### 2025-12-21
-- [New York enacts nation-leading AI safety regulations with the RAISE Act, aimed at regulating artificial intelligence safety and transparency](https://www.startupecosystem.ca/news/new-york-enacts-nation-leading-ai-safety-regulations-with-raise-act/)
-- [Small Business Technology News, including Google's AI chatbots being only 69% accurate and CEOs planning to continue spending on AI despite spotty returns](https://www.forbes.com/sites/quickerbettertech/2025/12/21/small-business-technology-news-this-week-google-says-chatbots-are-69-accurate/)
-- [AI Stocks News, with Nvidia, Broadcom, and Alphabet setting the tone for 2026 as Wall Street weighs bubble risks](https://ts2.tech/en/ai-stocks-news-today-dec-21-2025-nvidia-broadcom-and-alphabet-set-the-tone-for-2026-as-wall-street-weighs-bubble-risks/)
+### 2026-02-18
+- [Indian farmer Bir Virk talks with his neighboring farmer about using AI in farming](https://apnews.com/article/india-ai-summit-artificial-intelligence-education-farmers-fc59f14e0cfefc212ea727be9c407186)
 
-### 2025-12-20
-- [Investors focus on AI startups for future growth, emphasizing the importance of demonstrating resilience and domain expertise in the rapidly evolving AI market](https://www.startupecosystem.ca/news/investors-focus-on-ai-startups-for-future-growth/)
+### 2026-02-17
+- [Here are the 17 US-based AI companies that have raised $100m or more in 2026](https://techcrunch.com/2026/02/17/here-are-the-17-us-based-ai-companies-that-have-raised-100m-or-more-in-2026/)
 
-### 2025-12-19
-- [BofE governor states that AI is likely to displace jobs, but also likely to be the next leg up for UK economic growth](https://www.finextra.com/newsarticle/47083/bofe-governor-ai-likely-to-displace-jobs)
-- [Fox News AI Newsletter, featuring the Trump administration's launch of a new initiative to recruit top-tier technical talent to accelerate AI adoption at the federal level](https://www.foxnews.com/tech/ai-newsletter-blue-collar-productivity-boom)
+### 2026-02-16
+- [India hosts first AI summit in developing world, with over 250,000 delegates expected](https://www.reuters.com/business/retail-consumer/openai-google-india-hosts-global-ai-summit-2026-02-16/)
+- [All the important news from the ongoing India AI Summit](https://techcrunch.com/2026/02/16/all-the-important-news-from-the-ongoing-india-ai-summit/)
 
-### 2025-12-18
-- [OpenAI discussed raising tens of billions at a valuation around $750 billion](https://www.theinformation.com/articles/openai-discussed-raising-tens-billions-valuation-around-750-billion)
+### 2026-02-15
+- [China's AI giants roll out new models, putting pressure on NVDA and GOOGL](https://www.tipranks.com/news/built-for-the-agent-era-chinas-ai-giants-roll-out-new-models-putting-pressure-on-nvda-and-googl)
 
-### 2025-12-17
-- [The top construction technology news of 2025, including the use of alternative building materials and the importance of AI and data centers](https://www.constructiondive.com/news/the-top-construction-technology-news-of-2025/808077/)
+### 2026-02-14
+- [Small business technology news: AI models that are better than ChatGPT](https://www.forbes.com/sites/quickerbettertech/2026/02/14/small-business-technology-news-ai-models-that-are-better-than-chatgpt/)
 
-### 2025-12-14
-- [WSJ Technology newsletter, featuring news on AI, including China's AI power play and the potential risks of AI development](https://www.wsj.com/tech/ai/chatgpt-and-a-murder-suicide-09d66b70)
+### 2026-02-13
+- [AI angst in US stocks sends global money chasing Asia's winners](https://www.bloomberg.com/news/articles/2026-02-13/ai-angst-in-us-stocks-sends-global-money-chasing-asia-s-winners)
 
-### 2025-12-12
-- [OpenAI unveils GPT-5.2, its most advanced artificial intelligence model to date, featuring significant improvements in writing, coding, and reasoning](https://www.startupecosystem.ca/news/openai-unveils-gpt-5-2-amidst-competitive-ai-landscape/)
-- [Fox News AI Newsletter, featuring the Vatican's document on artificial intelligence and the FBI's use of AI tools to counter domestic and international threats](https://www.foxnews.com/tech/ai-newsletter-hegseth-moves-revolutionize-american-warfighting)
+### 2026-02-12
+- [US pushes AI funding, fisheries tech at APEC amid China rivalry](https://www.reuters.com/world/china/us-pushes-ai-funding-fisheries-tech-apec-amid-china-rivalry-2026-02-12/)
+- [Pentagon pushing AI companies to expand on classified networks](https://www.itnews.com.au/news/pentagon-pushing-ai-companies-to-expand-on-classified-networks-623589)
 
-### 2025-12-07
-- [Small Business Technology News, including Microsoft's warning about Windows 11's agentic features and Amazon's release of AI agents](https://www.forbes.com/sites/quickerbettertech/2025/12/07/small-business-technology-news-this-week-windows-11-hallucinations-amazons-ai-agents-nana-banana-pro-gets-tested/)
-- [Top Tech Stories Investors Missed, featuring AI factories, $2B chip bets, and a new wave of lawsuits](https://ts2.tech/en/top-tech-stories-investors-missed-this-week-dec-1-7-2025-ai-factories-2b-chip-bets-and-a-new-wave-of-lawsuits/)
+### 2026-02-06
+- [Tesla is training its AI technology in China, local media reports](https://www.reuters.com/technology/tesla-is-training-its-ai-technology-china-local-media-reports-2026-02-06/)
 
-### 2025-12-05
-- [Fox News AI Newsletter, featuring Melania Trump's use of AI audio technology and Elon Musk's views on AI-powered robotics](https://www.foxnews.com/tech/ai-newsletter-chatgpt-code-red)
+### 2026-02-05
+- [Digital scent company Osmo has raised US$70m in a fresh round of funding](https://www.cosmeticsbusiness.com/osmo-digital-scent-startup-seriesb-%2470m-scale-olfaction-technology)
+
+### 2026-02-01
+- [The $100 billion megadeal between OpenAI and Nvidia is on ice](https://www.wsj.com/tech/ai/ais-fundraising-frenzy-continues-911af613?gaa_at=eafs&gaa_n=AWEtsqeKBfuBxXqMXJ5wc0uqQR-VVuyTNscCdLBk8eCFXr3uSfIB5AwqYJ7W&gaa_ts=697f72c9&gaa_sig=jEsXB_JS00n3k1mmK5HF8bGzrIlsONK_xh1B0b0msGXYeIaI6_7DGj8_qc_j-0ydi-c5pBi_TKLQj5EqzuZthA%3D%3D)

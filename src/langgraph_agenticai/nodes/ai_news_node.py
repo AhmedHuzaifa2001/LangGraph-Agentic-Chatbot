@@ -5,14 +5,17 @@ from src.langgraph_agenticai.state.state import *
 
 
 class AINewsNode:
-    def __init__(self , llm):
+    def __init__(self , llm, tavily_api_key=None):
          """
         Initialize the AINewsNode with API keys for Tavily and GROQ.
         """
          
-         # What it does internally (explicit):
-         # self.tavily = TavilyClient(api_key=os.environ.get('TAVILY_API_KEY'))
-         self.tavily = TavilyClient()
+         # Use user-provided API key instead of environment variable
+         if tavily_api_key:
+             self.tavily = TavilyClient(api_key=tavily_api_key)
+         else:
+            
+             self.tavily = TavilyClient()
          self.llm = llm
 
          self.state = {}
@@ -41,7 +44,7 @@ class AINewsNode:
                     include_answer="advanced",
                     max_results=20,
                     days=days_map[frequency],
-                    # include_domains=["techcrunch.com", "venturebeat.com/ai", ...]  # Uncomment and add domains if needed
+        
                 )
 
          state['news_data'] = response.get('results', [])

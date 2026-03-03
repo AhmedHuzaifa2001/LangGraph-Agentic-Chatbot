@@ -1,34 +1,34 @@
 # Weekly AI News Summary
 
-### 2026-01-05
-- [Foxconn's Q4 revenue surges 22.07% from a year earlier on AI demand](https://www.reuters.com/world/china/foxconns-q4-revenue-surges-2207-year-earlier-ai-demand-2026-01-05/)
+### 2026-03-02
+- [Sweden aims to become a top 10 country for artificial intelligence](https://www.researchprofessionalnews.com/rr-news-europe-nordics-2026-3-sweden-aims-to-become-a-top-10-country-for-artificial-intelligence/)
+- [Wall St Week Ahead: AI disruption looms over markets with US jobs data tap](https://www.reuters.com/world/asia-pacific/wall-st-week-ahead-ai-disruption-looms-over-markets-with-us-jobs-data-tap-2026-03-02/)
 
-### 2026-01-04
-- [Small Business Technology News: WordPress Launches Plugin To Help Improve SEO For AI Searching](https://www.forbes.com/sites/quickerbettertech/2026/01/04/small-business-technology-news-wordpress-launches-plugin-to-help-improve-seo-for-ai-searching/)
-- [OpenAI’s International Conundrum](https://www.theinformation.com/articles/openais-international-conundrum)
-- [CES Preview, Nvidia’s $20 Billion Groq Deal, Meta Buys Manus For $2 Billion, Netflix Nabs Ready Player Me](https://www.forbes.com/sites/charliefink/2026/01/01/ces-2026-nvidias-20-billion-groq-deal-meta-buys-manus-for-2-billion-netflix-nabs-ready-player-me/)
-- [Another PR announces New Tech Startups to Watch at CES 2026](https://markets.businessinsider.com/news/stocks/another-pr-announces-new-tech-startups-to-watch-at-ces-2026-1035681181)
+### 2026-03-01
+- No news available
 
-### 2026-01-03
-- [2 Spectacular Artificial Intelligence (AI) Stocks to Buy Hand Over Fist in 2026, According to Wall Street](https://www.fool.com/investing/2026/01/03/2-spectacular-ai-stocks-buy-hand-2026-wall-street/)
-- [Desantis says Florida can regulate AI despite Trump's executive order](https://www.foxnews.com/tech/desantis-says-florida-can-regulate-ai-despite-trumps-executive-order-we-have-right-do-this)
+### 2026-02-28
+- [Nvidia readies new chip for inference demand](https://www.tipranks.com/news/ai-moves-to-real-time-nvidia-nvda-readies-new-chip-for-inference-demand)
 
-### 2026-01-02
-- [Stock Market Today: S&P 500 Rises, Chip Stocks Rally as New Year Kicks Off](https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-01-02-2026)
-- [Baidu’s AI Chip Unit Kunlunxin Plans Hong Kong Listing](https://www.wsj.com/business/baidus-ai-chip-unit-kunlunxin-plans-hong-kong-listing-8542b599)
+### 2026-02-27
+- [Nvidia’s earnings beat and AI news give markets relief — for now](https://www.cnbc.com/2026/02/27/cnbc-daily-open-netflix-walks-away-from-warner-bros-discovery-bid.html)
+- [TeamOhana highlights AI-driven workforce intelligence strategy](https://www.tipranks.com/news/private-companies/teamohana-highlights-ai-driven-workforce-analyst-to-enhance-headcount-visibility)
+- [India’s chip push, funding gap for women, AI marketing shift, Wells Fargo hiring, crypto recovery](https://www.analyticsinsight.net/tech-news/top-news-today-indias-chip-push-funding-gap-for-women-ai-marketing-shift-wells-fargo-hiring-crypto-recovery)
+- [AI skills are officially most difficult to find](https://www.hrdive.com/news/ai-skills-are-officially-most-difficult-to-find-manpowergroup/813458/)
 
-### 2026-01-01
-- [Nvidia CEO Jensen Huang brings AI cred to CES](https://nypost.com/2026/01/01/business/nvidia-ceo-jensen-huang-brings-ai-cred-to-ces/)
-- [OpenAI Ramps Up Audio AI Efforts Ahead of Device](https://www.theinformation.com/articles/openai-ramps-audio-ai-efforts-ahead-device)
+### 2026-02-26
+- [February 2026: Top Five AI Stories of the Month](https://www.fintechfutures.com/ai-in-fintech/february-2026-top-five-ai-stories-of-the-month)
+- [CNBC Daily Open: Nvidia’s earnings beat and other AI news give markets relief — for now](https://www.cnbc.com/2026/02/26/cnbc-daily-open-nvidias-earnings-beat-ai-news-give-markets-relief-for-now.html)
+- [GenAI delivering now, tokenisation is next for FS industry – survey](https://www.finextra.com/newsarticle/47360/genai-delivering-now-tokenisation-is-next-for-fs-industry---survey)
 
-### 2025-12-31
-- [2025 Most Memorable Technology Moments: December 31, 2025](https://www.foxnews.com/tech/2025-most-memorable-technology-moments-december-31-2025)
-- [Hong Kong Stocks Log Best Year Since 2017 as AI Boom Fuels Tech Rally](https://www.wsj.com/finance/stocks/hong-kong-stocks-log-best-year-since-2017-as-ai-boom-fuels-tech-rally-d4bfdf87)
+### 2026-02-25
+- [How AI Is Impacting Jobs, Creativity & Human Skills](https://www.usatoday.com/press-release/story/26794/how-ai-is-impacting-jobs-creativity-human-skills/)
+- [China startups is driving the future of global robotaxi deployment](https://www.forbes.com/sites/viviantoh/2026/02/24/china-startups-is-driving-the-future-of-global-robotaxi-deployment/)
+- [TeamOhana highlights AI-driven workforce intelligence strategy](https://www.tipranks.com/news/private-companies/teamohana-highlights-ai-workforce-analyst-to-enhance-headcount-visibility)
+- [Thales 2026 Data Threat Report Finds 70% of Organizations Rank AI as Top Data Security Risk](https://markets.ft.com/data/announce/detail?dockey=600-202602250300BIZWIRE_USPRX____20260225_BW599723-1)
+- [BostonGene CEO Andrew Feinberg to deliver keynote at Mobile World Congress Barcelona 2026](https://www.biospace.com/press-releases/bostongene-ceo-andrew-feinberg-to-deliver-keynote-at-mobile-world-congress-barcelona-2026)
+- [US stock futures inch up ahead of Nvidia earnings, AI jitters ease](https://www.reuters.com/business/us-stock-futures-inch-up-ahead-nvidia-earnings-ai-jitters-ease-2026-02-25/)
+- [The Race to Dominate A.I. Is Brutally Competitive](https://www.nytimes.com/2026/02/25/opinion/ai-industry-competition-innovation.html)
 
-### 2025-12-30
-- [Elon Musk’s xAI Buys Building for Third Supersized Data Center](https://www.theinformation.com/articles/elon-musks-xai-buys-building-third-supersized-data-center)
-- [Tech, Media & Telecom Roundup: Market Talk](https://www.wsj.com/tech/tech-media-telecom-roundup-market-talk-f3a0c0b9)
-
-### 2025-12-29
-- [Nvidia Licenses Groq’s AI Technology](https://www.wsj.com/business/deals/nvidia-20-billion-groq-deal-9f8d3a5b)
-- [The 32 Top Enterprise Tech Startups From Disrupt Startup Battlefield](https://techcrunch.com/2025/12/29/the-32-top-enterprise-tech-startups-from-disrupt-startup-battlefield/)
+### 2026-02-24
+- [Technion leads Israel, Europe in AI research in new CSRanking index, ranking 21st worldwide](https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-887666)

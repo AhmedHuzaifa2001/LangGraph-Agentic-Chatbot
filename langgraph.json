@@ -1,0 +1,11 @@
+{
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "basic_chatbot": "./graphs.py:basic_chatbot",
+        "chatbot_with_tools": "./graphs.py:chatbot_with_tools",
+        "ai_news_pipeline": "./graphs.py:ai_news_pipeline"
+    },
+    "env": "./.env"
+}

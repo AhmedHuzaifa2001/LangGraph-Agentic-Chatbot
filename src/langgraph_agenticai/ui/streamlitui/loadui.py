@@ -116,7 +116,7 @@ class LoadUI:
 
 
                 ## AI News usecase selection
-                if self.user_controls["selected_usecase"] == "AI News":
+                if self.user_controls["selected_usecase"] == "AI News" and self.user_controls["tavily_api_key"]:
                      st.subheader("AI News Explorer")
 
                      with st.sidebar:
