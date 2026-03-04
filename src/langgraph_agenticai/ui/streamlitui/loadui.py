@@ -104,9 +104,12 @@ class LoadUI:
                     help="Select the use case for your AI agent"
                 )
                 
+                # Smart Router info
+                if self.user_controls["selected_usecase"] == "Smart Router":
+                    st.info("🤖 Smart Router automatically detects your intent and routes to the appropriate agent!")
 
                 ## Chatbot usecase selection
-                if self.user_controls["selected_usecase"] == "Chatbot With Web" or self.user_controls["selected_usecase"] == "AI News":
+                if self.user_controls["selected_usecase"] in ["Chatbot With Web", "AI News", "Smart Router"]:
                      
                      self.user_controls["tavily_api_key"] = st.session_state["tavily_api_key"] = st.text_input("Tavily Api Key" , type = "password")
 

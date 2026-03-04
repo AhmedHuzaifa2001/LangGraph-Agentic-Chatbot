@@ -32,7 +32,19 @@ class AINewsNode:
         Returns:
             dict: Updated state with 'news_data' key containing fetched news.
         """
-         frequency = state['messages'][0].content.lower()
+         # Smart Router: parameter_extractor already set state['frequency']
+         # Old system: user typed frequency directly as the message
+         valid_frequencies = {'daily', 'weekly', 'monthly', 'year'}
+         state_frequency = state.get('frequency', '').lower().strip()
+
+         if state_frequency in valid_frequencies:
+             frequency = state_frequency  # use what parameter_extractor extracted
+         elif state.get('messages'):
+             msg_content = state['messages'][0].content.lower().strip()
+             frequency = msg_content if msg_content in valid_frequencies else 'weekly'
+         else:
+             frequency = 'weekly'  # safe default
+
          self.state['frequency'] = frequency
          time_range_map = {'daily': 'd', 'weekly': 'w', 'monthly': 'm', 'year': 'y'}
          days_map = {'daily': 1, 'weekly': 7, 'monthly': 30, 'year': 366}

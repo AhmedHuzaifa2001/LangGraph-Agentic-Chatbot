@@ -1,4 +1,5 @@
 import streamlit as st
+import traceback
 from src.langgraph_agenticai.ui.streamlitui.loadui import LoadUI
 from src.langgraph_agenticai.LLM.groqLLM import *
 from src.langgraph_agenticai.graph.graph_builder import *
@@ -48,10 +49,18 @@ def load_agentic_app():
                graph_builder = GraphBuilder(model, user_controls=user_input)
 
                try:
-                    graph = graph_builder.setup_graph(usecase)
+                    if usecase == "Smart Router":
+                         ## New system: unified router graph handles routing automatically
+                         graph = graph_builder.create_unified_router_graph()
+                    else:
+                         ## Old system: manual usecase selection
+                         graph_builder.setup_graph(usecase)
+                         graph = graph_builder.graph_builder.compile()
+                    
                     DisplayResults(usecase , graph , user_message).display_result_on_ui()
                except Exception as e:
                     st.error(f"Error: Graph set up failed!!!: {e}")
+                    st.code(traceback.format_exc())
 
           except Exception as e:
                 st.error("Error: failed!!!: {e}")

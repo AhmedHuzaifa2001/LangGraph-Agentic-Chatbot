@@ -46,3 +46,9 @@ chatbot_with_tools = builder_2.graph_builder.compile()
 builder_3 = GraphBuilder(model, user_controls)
 builder_3.ai_news_builder()
 ai_news_pipeline = builder_3.graph_builder.compile()
+
+
+## Graph 4: Smart Router Graph
+# Add this at the end of graphs.py
+builder_unified = GraphBuilder(model, user_controls)
+unified_router = builder_unified.create_unified_router_graph()

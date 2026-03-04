@@ -14,7 +14,50 @@ class DisplayResults:
         graph = self.graph
         user_message = self.user_message
 
-        if usecase == "Basic Chatbot":
+        # Smart Router - dynamically handles all usecases
+        if usecase == "Smart Router":
+            with st.chat_message("user"):
+                st.write(user_message)
+            
+            for event in graph.stream({"messages": [HumanMessage(content=user_message)]}):
+                for value in event.values():
+                    # Guard against None or non-dict stream events
+                    if not isinstance(value, dict):
+                        continue
+
+                    # Show which route was chosen (for debugging/transparency)
+                    if "usecase" in value:
+                        st.info(f"🤖 Routed to: **{value['usecase']}**")
+                    
+                    if "messages" in value:
+                        msgs = value["messages"]
+                        # Normalise to list
+                        if not isinstance(msgs, list):
+                            msgs = [msgs]
+                        message = msgs[-1] if msgs else None
+                        
+                        # Handle AI responses
+                        if isinstance(message, AIMessage):
+                            if hasattr(message, 'tool_calls') and message.tool_calls:
+                                with st.chat_message("assistant"):
+                                    st.write(f"🔧 Using tools: {[tool['name'] for tool in message.tool_calls]}")
+                            else:
+                                with st.chat_message("assistant"):
+                                    st.write(message.content)
+                        
+                        elif isinstance(message, ToolMessage):
+                            with st.expander("Tool Result"):
+                                st.write(message.content)
+                    
+                    # Handle AI News summary
+                    if "summary" in value:
+                        with st.chat_message("assistant"):
+                            st.markdown("### 📰 AI News Summary")
+                            st.markdown(value["summary"])
+                        if "filename" in value:
+                            st.success(f"✅ Summary saved to: `{value['filename']}`")
+
+        elif usecase == "Basic Chatbot":
             for event in graph.stream({"messages":[HumanMessage(content=user_message)]}):
                     
                     print(event.values())
