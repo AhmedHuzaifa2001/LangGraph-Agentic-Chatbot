@@ -102,7 +102,7 @@ class AINewsNode:
         frequency = self.state['frequency']
         summary = self.state['summary']
         filename = f"./AINews/{frequency}_summary.md"
-        with open(filename, 'w') as f:
+        with open(filename, 'w', encoding='utf-8') as f:
             f.write(f"# {frequency.capitalize()} AI News Summary\n\n")
             f.write(summary)
         self.state['filename'] = filename
