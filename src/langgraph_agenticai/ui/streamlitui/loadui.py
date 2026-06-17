@@ -132,7 +132,14 @@ class LoadUI:
                           st.session_state.IsFetchButtonClicked = True  ## Creates a flag (boolean) in session state
                           st.session_state.timeframe = time_frame
                      
+                st.divider()
 
+                if st.button("Clear Chat", use_container_width=True):
+                    st.session_state["messages"] = []
+                    st.session_state["IsFetchButtonClicked"] = False
+                    if "timeframe" in st.session_state:
+                        del st.session_state["timeframe"]
+                    st.rerun()
 
                 # Footer with additional info
                 st.divider()

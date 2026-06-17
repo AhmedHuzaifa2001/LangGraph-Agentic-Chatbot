@@ -21,46 +21,50 @@ def load_agentic_app():
      if not user_input:
           st.error("Error : Failed to load user input")
      
-     
+     if "messages" not in st.session_state:
+          st.session_state["messages"] = []
 
      if st.session_state.get("IsFetchButtonClicked", False):
           user_message = st.session_state.get("timeframe")
      else:
           user_message = st.chat_input("Enter your message: ")
 
+
+
      if user_message:
-          try:
-               llm_config =  GroqLLM(user_controls_input = user_input)
-               model = llm_config.get_groq_llm()
-
-               if not model:
-                    st.error("Error: LLm Model could not be initialized")
-               
-               ## usecase setup
-
-               usecase = user_input.get("selected_usecase")
-
-               if not usecase:
-                    st.error("Error: No usecase selected!!!")
-               
-
-               ##graph builder
-
-               graph_builder = GraphBuilder(model, user_controls=user_input)
-
                try:
-                    if usecase == "Smart Router":
-                         ## New system: unified router graph handles routing automatically
-                         graph = graph_builder.create_unified_router_graph()
-                    else:
-                         ## Old system: manual usecase selection
-                         graph_builder.setup_graph(usecase)
-                         graph = graph_builder.graph_builder.compile()
-                    
-                    DisplayResults(usecase , graph , user_message).display_result_on_ui()
-               except Exception as e:
-                    st.error(f"Error: Graph set up failed!!!: {e}")
-                    st.code(traceback.format_exc())
+                    llm_config =  GroqLLM(user_controls_input = user_input)
+                    model = llm_config.get_groq_llm()
 
-          except Exception as e:
-                st.error("Error: failed!!!: {e}")
+                    if not model:
+                         st.error("Error: LLm Model could not be initialized")
+                    
+                    ## usecase setup
+
+                    usecase = user_input.get("selected_usecase")
+
+                    if not usecase:
+                         st.error("Error: No usecase selected!!!")
+                    
+                    st.session_state["messages"].append(HumanMessage(content = user_message))
+
+                    ##graph builder
+
+                    graph_builder = GraphBuilder(model, user_controls=user_input)
+
+                    try:
+                         if usecase == "Smart Router":
+                              ## New system: unified router graph handles routing automatically
+                              graph = graph_builder.create_unified_router_graph()
+                         else:
+                              ## Old system: manual usecase selection
+                              graph_builder.setup_graph(usecase)
+                              graph = graph_builder.graph_builder.compile()
+                         
+                         DisplayResults(usecase , graph , user_message).display_result_on_ui()
+                    except Exception as e:
+                         st.error(f"Error: Graph set up failed!!!: {e}")
+                         st.code(traceback.format_exc())
+
+               except Exception as e:
+                    st.error("Error: failed!!!: {e}")
