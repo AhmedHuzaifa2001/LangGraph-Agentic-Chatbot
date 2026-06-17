@@ -4,6 +4,7 @@ from src.langgraph_agenticai.ui.streamlitui.loadui import LoadUI
 from src.langgraph_agenticai.LLM.groqLLM import *
 from src.langgraph_agenticai.graph.graph_builder import *
 from src.langgraph_agenticai.ui.streamlitui.display_result import *
+from langgraph.checkpoint.memory import InMemorySaver
 
 def load_agentic_app():
      
@@ -17,6 +18,17 @@ def load_agentic_app():
      ## LoadUI
      ui = LoadUI()
      user_input = ui.load_ui()
+
+
+     if "checkpointer" not in st.session_state:
+          st.session_state["checkpointer"] = InMemorySaver()
+
+     if "thread_id" not in st.session_state:
+          if "thread_id" in st.query_params:
+               st.session_state["thread_id"] = st.query_params["thread_id"]
+          else:
+               st.session_state["thread_id"] = str(uuid.uuid4())
+               st.query_params["thread_id"] = st.session_state["thread_id"]
 
      if not user_input:
           st.error("Error : Failed to load user input")
@@ -59,7 +71,7 @@ def load_agentic_app():
                          else:
                               ## Old system: manual usecase selection
                               graph_builder.setup_graph(usecase)
-                              graph = graph_builder.graph_builder.compile()
+                              graph = graph_builder.graph_builder.compile(checkpointer = st.session_state["checkpointer"])
                          
                          DisplayResults(usecase , graph , user_message).display_result_on_ui()
                     except Exception as e:

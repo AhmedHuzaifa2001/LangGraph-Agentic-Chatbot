@@ -1,6 +1,7 @@
 import streamlit as st
 from langchain_core.messages import HumanMessage , AIMessage , ToolMessage
 import json
+import uuid
 
 class DisplayResults:
     def __init__(self , usecase , graph , user_message):
@@ -23,6 +24,8 @@ class DisplayResults:
                 with st.expander("Tool Result"):
                     st.write(message.content)
 
+    
+
 
     def display_result_on_ui(self):
         usecase = self.usecase
@@ -33,7 +36,8 @@ class DisplayResults:
         if usecase == "Smart Router":
             final_ai_message = None
 
-            for event in graph.stream({"messages": st.session_state["messages"]}):
+            for event in graph.stream({"messages": st.session_state["messages"]} , 
+                                      config={"configurable": {"thread_id": st.session_state["thread_id"]}}):
                 for value in event.values():
                     if not isinstance(value, dict):
                         continue
@@ -74,7 +78,8 @@ class DisplayResults:
         elif usecase == "Basic Chatbot":
             final_ai_message = None
 
-            for event in graph.stream({"messages": st.session_state["messages"]}):
+            for event in graph.stream({"messages": st.session_state["messages"]} , 
+                                      config={"configurable": {"thread_id": st.session_state["thread_id"]}}):
                 for value in event.values():
                     if isinstance(value, dict) and "messages" in value:
                         msgs = value["messages"]
@@ -94,7 +99,8 @@ class DisplayResults:
         elif usecase == "Chatbot With Web":
             final_ai_message = None
 
-            for event in graph.stream({"messages": st.session_state["messages"]}):
+            for event in graph.stream({"messages": st.session_state["messages"]} , 
+                                      config={"configurable": {"thread_id": st.session_state["thread_id"]}}):
                 for value in event.values():
                     if "messages" in value:
                         message = value["messages"][-1]
@@ -119,7 +125,8 @@ class DisplayResults:
             with st.spinner("Fetching and summarizing latest AI news..."):
                 result = None
 
-                for event in graph.stream({"messages": st.session_state["messages"]}):
+                for event in graph.stream({"messages": st.session_state["messages"]} , 
+                                          config={"configurable": {"thread_id": st.session_state["thread_id"]}}):
                     for value in event.values():
                         result = value
 

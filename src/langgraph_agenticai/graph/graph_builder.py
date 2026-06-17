@@ -7,6 +7,9 @@ from src.langgraph_agenticai.nodes.chatbot_with_tools import *
 from src.langgraph_agenticai.nodes.ai_news_node import *
 from src.langgraph_agenticai.nodes.router_node import RouterNode
 from src.langgraph_agenticai.nodes.parameter_extractor_node import ParameterExtractorNode
+from langgraph.checkpoint.memory import InMemorySaver
+import streamlit as st
+
 
 class GraphBuilder:
     def __init__(self , model, user_controls=None):
@@ -14,7 +17,7 @@ class GraphBuilder:
         self.user_controls = user_controls or {}
         self.graph_builder = StateGraph(State)
 
-
+    
 
     def route_to_usecase(self , state:State) -> str:
 
@@ -98,10 +101,14 @@ class GraphBuilder:
 
 
     
-    def create_unified_router_graph(self):
+    def create_unified_router_graph(self, use_checkpointer=True):
         """
         Creates a unified graph with automatic routing based on query intent.
         Flow: START → router → parameter_extractor → [conditional routing to usecase] → END
+        
+        Args:
+            use_checkpointer: If True, compiles with InMemorySaver (for Streamlit).
+                              If False, compiles without checkpointer (for LangGraph Studio).
         """
         # Create a FRESH StateGraph for the unified router
         unified_graph = StateGraph(State)
@@ -170,7 +177,12 @@ class GraphBuilder:
         unified_graph.add_edge("summarize_news", "save_results")
         unified_graph.add_edge("save_results", END)
 
-        return unified_graph.compile()
+        if use_checkpointer:
+            if "checkpointer" not in st.session_state:
+                st.session_state["checkpointer"] = InMemorySaver()
+            return unified_graph.compile(checkpointer=st.session_state["checkpointer"])
+        else:
+            return unified_graph.compile()
 
         
 
