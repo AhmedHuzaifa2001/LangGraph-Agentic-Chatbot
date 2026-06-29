@@ -1,0 +1,29 @@
+# Git
+.git
+.gitignore
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+
+# Environment files (API keys — NEVER bake into images)
+.env
+
+# LangGraph Studio files
+.langgraph_api
+
+# IDE files
+.vscode
+.idea
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Misc
+README.md
+*.md
+!AINews/*.md
